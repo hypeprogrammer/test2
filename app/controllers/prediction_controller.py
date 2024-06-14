@@ -21,12 +21,3 @@ def predict_form():
                     float(request.form['petal_width'])]
         prediction = prediction_service.predict(features)
         return render_template('result.html', prediction=prediction)
-    return '''
-        <form method="post">
-            Sepal Length: <input type="text" name="sepal_length"><br>
-            Sepal Width: <input type="text" name="sepal_width"><br>
-            Petal Length: <input type="text" name="petal_length"><br>
-            Petal Width: <input type="text" name="petal_width"><br>
-            <input type="submit" value="Predict">
-        </form>
-    '''
