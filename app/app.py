@@ -1,4 +1,3 @@
-# main.py
 from flask import Flask
 from app.controllers.prediction_controller import prediction_bp
 from app.controllers.main_controller import main_bp
